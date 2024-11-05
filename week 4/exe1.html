@@ -2,94 +2,56 @@
 <html>
 
 <head>
-    <title>week3exe1.html</title>
+    <title>
+        week4exe1.html
+    </title>
     <style>
-        button.rn {
-            background-color: black;
-            color: white;
-            border: 1px solid black;
-            padding: 10px;
-            padding-left: 15px;
-            padding-right: 15px;
+        #nav {
+            display: flex;
+            background-color: rgb(0, 106, 255);
+            margin: 20px;
         }
 
-        button.signup {
-            background-color: #55a35a;
-            color: black;
-            border: 0px;
-            border-radius: 5px;
-            padding: 10px;
-            padding-left: 20px;
-            padding-right: 20px;
+        a {
+            text-decoration: none;
         }
 
-        button.addtocart {
-            background-color: #f9da4e;
-            color: black;
-            border: 0px;
-            border-radius: 20px;
-            padding: 5px;
-            padding-left: 35px;
-            padding-right: 35px;
-
+        a:hover {
+            text-decoration: underline;
         }
 
-        button.getstarted {
-            background-color: #7556ad;
-            color: white;
-            border: 0px;
-            border-radius: 2px;
-            padding: 10px;
-            padding-left: 20px;
-            padding-right: 20px;
+
+
+        .about {
+            margin-left: 20px;
+            margin-right: 10px;
         }
 
-        button.download {
-            background-color: white;
-            color: #87898b;
-            border: 1px solid #87898b;
-            border-radius: 2px;
-            padding: 10px;
-            padding-left: 20px;
-            padding-right: 20px;
+        .service {
+            margin-left: 10px;
+            margin-right: 10px;
         }
 
-        button.aocw {
-            background-color: #2d65bc;
-            font-weight: bold;
-            color: white;
-            border: 0px;
-            border-radius: 20px;
-            padding: 10px;
-            padding-left: 20px;
-            padding-right: 20px;
-
+        .team {
+            margin-left: 10px;
+            margin-right: 10px;
         }
 
-        button.save {
-            background-color: white;
-            font-weight: bold;
-            color: #577dcb;
-            border: 1px solid #577dcb;
-            border-radius: 20px;
-            padding: 10px;
-            padding-left: 25px;
-            padding-right: 25px;
-
+        .contact {
+            margin-left: 10px;
+            margin-right: 10px;
         }
     </style>
 </head>
 
 <body>
-    <button class="rn">Request now</button>
-    <button class="signup">Sign up</button>
-    <button class="addtocart">Add to Cart</button>
-    <p>
-        <button class="getstarted">Get started</button>
-        <button class="download">Download</button>
-        <button class="aocw">Apply on company website</button>
-        <button class="save">Save</button>
-    </p>
+    <div id="nav">
+        <a href="#">Home</a>
+        <div class="about">About</div>
+        <div class="service">Service</div>
+        <div class="team">Team</div>
+        <div class="contact">Contact</div>
+    </div>
 </body>
 
 </html>

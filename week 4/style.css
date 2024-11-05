@@ -1,0 +1,84 @@
+        button.rn {
+            background-color: black;
+            color: white;
+            border: 1px solid black;
+
+        }
+
+        button.signup {
+            background-color: #55a35a;
+            color: black;
+            border: 0px;
+            border-radius: 5px;
+            padding: 10px;
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+
+        button.addtocart {
+            background-color: #f9da4e;
+            color: black;
+            border: 0px;
+            border-radius: 20px;
+            padding: 5px;
+            padding-left: 35px;
+            padding-right: 35px;
+
+        }
+
+        button.getstarted {
+            background-color: #7556ad;
+            color: white;
+            border: 0px;
+            border-radius: 2px;
+            padding: 10px;
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+
+        button.download {
+            background-color: white;
+            color: #87898b;
+            border: 1px solid #87898b;
+            border-radius: 2px;
+            padding: 10px;
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+
+        button.aocw {
+            background-color: #2d65bc;
+            font-weight: bold;
+            color: white;
+            border: 0px;
+            border-radius: 20px;
+            padding: 10px;
+            padding-left: 20px;
+            padding-right: 20px;
+
+        }
+
+        button.save {
+            background-color: white;
+            font-weight: bold;
+            color: #577dcb;
+            border: 1px solid #577dcb;
+            border-radius: 20px;
+            padding: 10px;
+            padding-left: 25px;
+            padding-right: 25px;
+
+        }
+
+        .button-style {
+            padding: 20px;
+            padding-left: 10px;
+            padding-right: 10px;
+            margin-left: 10px;
+            margin-right: 30px;
+        }
+
+        #heading {
+            font-size: large;
+            color: blue;
+        }
