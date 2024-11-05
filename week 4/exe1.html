@@ -5,16 +5,18 @@
     <title>
         week4exe1.html
     </title>
+    <meta name="viewport" content="width=device-width,initial-scale">
     <style>
         #nav {
             display: flex;
             justify-content: flex-end;
-            background-color: rgb(0, 106, 255);
-            margin: 20px;
+            background-color: rgb(41, 146, 238);
+            padding: 20px;
         }
 
         a {
             text-decoration: none;
+            color: white;
         }
 
         a:hover {
@@ -47,22 +49,28 @@
             margin-right: 10px;
         }
 
-        .image {
+        .navbar {
             display: flex;
+            justify-content: space-between;
+            background-color: rgb(41, 146, 238);
 
         }
     </style>
 </head>
 
 <body>
-    <div class="logo"><img src="image/instagram.png"></div>
-    <div id="nav">
-        <a href="#">Home</a>
-        <div class="about">About</div>
-        <div class="service">Service</div>
-        <div class="team">Team</div>
-        <div class="contact">Contact</div>
-    </div>
+    <div class="navbar">
+        <!--Logo in the navbar-->
+        <div class="logo">
+            <a href="image/junxiong.jpeg"><img src="image/junxiong.jpeg" alt="logo" width="50"></a>
+        </div>
+        <div id="nav">
+            <a href="#">Home</a>
+            <div class="about">About</div>
+            <div class="service">Service</div>
+            <div class="team">Team</div>
+            <div class="contact">Contact</div>
+        </div>
 </body>
 
 </html>
