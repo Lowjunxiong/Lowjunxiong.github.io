@@ -5,23 +5,54 @@
 <head>
     <title>Exe1 flexbox</title>
 </head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <style>
     body {
+        background-color: lightyellow;
+    }
+
+    body h1 {
         font-family: "Oxygen", sans-serif;
-        font-style: normal;
     }
 
-    .top {
-        justify-items: center;
-
+    #slogan {
+        font-size: 15px;
+        font-weight: bold;
     }
 
-    .img {}
+    body h3 {
+        font-family: "Oxygen", sans-serif;
+        font-weight: 100;
+    }
+
+    .title {
+        text-align: center;
+        margin: 20px;
+    }
+
+    .container {
+        font-family: "Oxygen", sans-serif;
+
+        display: flex;
+        margin: 10px;
+    }
+
+    .container div {
+        background-color: white;
+        width: (33.33%);
+        text-align: center;
+        margin: 15px;
+        padding: 20px;
+    }
+
+    img {
+        max-width: 100%;
+    }
 </style>
 
 <body>
-    <div class="top">
-        <h2>building a better future</h2>
+    <div class="title">
+        <h3 id="slogan">BUILDING A BETTER FUTURE</h3>
         <h1>We contruct & deliver quality projects</h1>
         <h3>meet our customers and explore their success story with us</h3>
     </div>
@@ -33,14 +64,14 @@
             <p>We build sustainable and modern homes for comfortable living</p>
         </div>
         <div>
-            <img src="/image/flexbox2.jpg" alt="img1">
-            <h4>Residential project</h4>
-            <p>We build sustainable and modern homes for comfortable living</p>
+            <img src="/image/flexbox2.jpg" alt="img2">
+            <h4>Commercial spaces</h4>
+            <p>We create efficient, inspiring workspaces for businesses of all sizes.</p>
         </div>
         <div>
-            <img src="/image/flexbox3.jpg" alt="img1">
-            <h4>Residential project</h4>
-            <p>We build sustainable and modern homes for comfortable living</p>
+            <img src="/image/flexbox3.jpg" alt="img3">
+            <h4>Infrastructure works</h4>
+            <p>We develop strong. reliable infrastructure for growing communities.</p>
         </div>
     </div>
 
