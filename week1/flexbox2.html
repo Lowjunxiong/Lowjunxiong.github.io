@@ -10,24 +10,91 @@
     }
 
     .container {
-        width: 100%;
         display: flex;
-        justify-content: center;
         gap: 30px;
-        justify-content: space-evenly;
+        justify-content: space-between;
+        padding: 15px;
+        font-family: "Oxygen", sans-serif;
+    }
+
+    .navmiddle {
+        display: flex;
+        gap: 50px;
+    }
+
+    .navright {
+        display: flex;
+        gap: 20px;
+        font-weight: bold;
+    }
+
+
+    button {
+        background-color: green;
+        border-radius: 10px;
+        border: none;
+        color: white;
+        width: 100px;
+        font-weight: bold;
+    }
+
+    .navright img {
+        display: none;
+    }
+
+    @media only screen and (max-width: 1100px) {
+
+        .container {
+            justify-content: space-between;
+            padding: 15px;
+        }
+
+        .navmiddle {
+            display: none;
+        }
+
+        button {
+            display: none;
+        }
+
+        .navright img {
+            display: flex;
+            width: 30px;
+            height: 30px;
+            padding: 10px;
+        }
+    }
+
+    @media only screen and (max-width: 800px) {
+
+        .navright p {
+            display: none;
+        }
+
+        #phone {
+            display: none;
+        }
     }
 </style>
 
 <body>
     <div class="container">
-        <img src="/image/flexbox2img.png" alt="">
-        <p>Home</p>
-        <p>Services</p>
-        <p>Work</p>
-        <p>Project Details</p>
-        <p>Contact</p>
-        <p>555-123-4567</p>
-        <button>Contact</button>
+        <div>
+            <img src="/image/flexbox2img.png" alt="">
+        </div>
+        <div class="navmiddle">
+            <p>Home</p>
+            <p>Services</p>
+            <p>Work</p>
+            <p>Project Details</p>
+            <p>Contact</p>
+        </div>
+        <div class="navright">
+            <img src="/image/phone-call.png" id="phone">
+            <p>555-123-4567</p>
+            <button>Contact</button>
+            <img src="/image/hamburger.png" alt="">
+        </div>
     </div>
 </body>
 
