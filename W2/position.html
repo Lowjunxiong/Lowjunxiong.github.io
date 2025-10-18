@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>W2 Exe1</title>
+</head>
+<style>
+    img {
+        width: 200px;
+    }
+
+    body {
+        font-family: "Oxygen", sans-serif;
+        padding: 10px;
+        background-color: beige;
+    }
+
+    .container {
+        display: flex;
+        gap: 30px;
+        justify-content: space-between;
+    }
+
+    .navmiddle {
+        display: flex;
+        gap: 50px;
+        align-items: center;
+    }
+
+    a {
+        color: black;
+        text-decoration: none;
+        font-family: "Oxygen", sans-serif;
+    }
+
+    .navright {
+        display: flex;
+        gap: 20px;
+        font-weight: bold;
+    }
+
+    .navright button {
+        background-color: green;
+        border-radius: 10px;
+        border: none;
+        color: white;
+        width: 100px;
+        font-weight: bold;
+    }
+
+    .navright img {
+        display: flex;
+        width: 30px;
+        height: 30px;
+    }
+
+    .imgleft {
+        padding: 5px;
+    }
+
+    .herotitle {
+        margin-bottom: 28px;
+        color: white;
+    }
+
+    .herotitle h1 {
+        font-size: 100px;
+        font-weight: 800;
+        text-transform: uppercase;
+        line-height: 0.95em;
+        letter-spacing: -0.04em;
+        width: 700px;
+    }
+
+    .herotitle h2 {
+        display: block;
+        font-size: 20px;
+        font-weight: 50;
+        width: 700px;
+        margin-bottom: 28px;
+    }
+
+    .btn1 {
+        background-color: yellow;
+        border: none;
+        border-radius: 10px;
+        width: 200px;
+        height: 60px;
+        font-size: 18px;
+    }
+
+    .btn2 {
+        color: white;
+        background-color: transparent;
+        border-color: white;
+        border-radius: 10px;
+        border-width: 3px;
+        width: 200px;
+        height: 60px;
+        font-size: 18px;
+    }
+
+    .hero {
+        background-image: url(/image/building1.jpg);
+        background-size: cover;
+        border-radius: 15px;
+        padding-top: 70px;
+        padding: 30px;
+        margin-top: 10px;
+    }
+
+
+    .whiteboxes {
+        width: 480px;
+        display: grid;
+        justify-content: flex-end;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        row-gap: 10px;
+        column-gap: 10px;
+        position: absolute;
+        right: 50px;
+    }
+
+    .whiteboxes div {
+        background-color: white;
+        border-radius: 15px;
+        padding: 30px;
+        padding-top: 25px;
+        width: 200px;
+        height: 150px;
+    }
+
+    .whiteboxes h1 {
+        font-size: 50px;
+        color: green;
+    }
+
+
+    @media only screen and (max-width: 1200px) {
+
+        .container {
+            justify-content: space-between;
+        }
+
+        .navmiddle {
+            display: none;
+        }
+
+        .navright button {
+            display: none;
+        }
+
+        .navright img {
+            display: flex;
+            width: 30px;
+            height: 30px;
+            padding: 10px;
+        }
+
+        .herotitle h1 {
+            font-size: 70px;
+            font-weight: 800;
+            width: 700px;
+        }
+    }
+
+    @media only screen and (max-width: 800px) {
+
+        .navright p {
+            display: none;
+        }
+
+        .navright .phone {
+            display: none;
+        }
+    }
+</style>
+
+<body>
+    <div class="container">
+        <div class="imgleft">
+            <img src="/image/flexbox2img.png" alt="">
+        </div>
+        <div class="navmiddle">
+            <a href="#">Home</a>
+            <a href="#">Services</a>
+            <a href="#">Work</a>
+            <a href="#">Project Details</a>
+            <a href="#">Contact</a>
+        </div>
+        <div class="navright">
+            <img src="/image/phone-call.png" class="phone">
+            <p>555-123-4567</p>
+            <button>Contact</button>
+            <img src="/image/hamburger.png" class="menu">
+        </div>
+    </div>
+
+    <div class="hero">
+        <div class="herotitle">
+            <h1>MODERN FOUNDATIONS</h1>
+            <h2>Your trusted partner for cutting-edge foundation construction.
+                We deliver robust and reliable solutions tailored to your project’s needs</h2>
+            <button class="btn1">Quote Request</button>
+            <button class="btn2">Our Portfolio</button>
+        </div>
+        <div class="whiteboxes">
+            <div>
+                <h1>50+</h1>
+                <h3>Multi-Story Projects</h3>
+            </div>
+            <div>
+                <h1>174</h1>
+                <h3>Residential Designs</h3>
+            </div>
+            <div>
+                <h1>21</h1>
+                <h3>Years in Business</h3>
+            </div>
+            <div>
+                <h1>360+</h1>
+                <h3>Renovation Success</h3>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
