@@ -11,7 +11,7 @@
 
     body {
         font-family: "Oxygen", sans-serif;
-        padding: 10px;
+        padding: 20px;
         background-color: beige;
     }
 
@@ -70,14 +70,15 @@
         line-height: 0.95em;
         letter-spacing: -0.04em;
         width: 700px;
+        margin-bottom: 30px;
     }
 
     .herotitle h2 {
-        display: block;
         font-size: 20px;
         font-weight: 50;
         width: 700px;
-        margin-bottom: 28px;
+        margin-bottom: 30px;
+        line-height: 1.5em;
     }
 
     .btn1 {
@@ -107,38 +108,39 @@
         padding-top: 70px;
         padding: 30px;
         margin-top: 10px;
+        height: 80vh;
     }
 
 
     .whiteboxes {
-        width: 480px;
+        width: 500px;
         display: grid;
-        justify-content: flex-end;
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(2, 1fr);
         row-gap: 10px;
         column-gap: 10px;
         position: absolute;
-        top: 50%;
-        right: 5%;
+        bottom: 100px;
+        right: 100px;
     }
 
     .whiteboxes div {
         background-color: white;
         border-radius: 15px;
         padding: 30px;
-        padding-top: 25px;
+        padding-bottom: 5px;
         width: 200px;
-        height: 150px;
+        height: 120px;
     }
 
     .whiteboxes h1 {
-        font-size: 50px;
+        font-size: 60px;
         color: green;
+        margin: 0px;
     }
 
 
-    @media only screen and (max-width: 1200px) {
+    @media only screen and (max-width: 1300px) {
 
         .container {
             justify-content: space-between;
@@ -163,10 +165,27 @@
             font-size: 70px;
             font-weight: 800;
             width: 700px;
+            margin-bottom: 20px;
+
         }
+
+
+
+        .whiteboxes {
+            position: absolute;
+            bottom: 60px;
+            right: 80px;
+
+        }
+
     }
 
     @media only screen and (max-width: 800px) {
+
+        body {
+            padding: 0px;
+            padding-top: 8px;
+        }
 
         .navright p {
             display: none;
@@ -174,6 +193,51 @@
 
         .navright .phone {
             display: none;
+        }
+
+        .herotitle h1 {
+            font-size: 40px;
+            width: 90%;
+        }
+
+        .herotitle h2 {
+            font-size: 18px;
+            width: 90%;
+        }
+
+        .hero {
+            background-image: url(/image/building1.jpg);
+            background-size: cover;
+        }
+
+        .btn1 {
+            background-color: yellow;
+            border: none;
+            border-radius: 8px;
+            width: 180px;
+            height: 50px;
+            font-size: 15px;
+        }
+
+        .btn2 {
+            color: white;
+            background-color: transparent;
+            border-color: white;
+            border-radius: 8px;
+            border-width: 3px;
+            width: 180px;
+            height: 50px;
+            font-size: 15px;
+        }
+
+        .whiteboxes {
+            display: flex;
+            flex-direction: column;
+            position: static;
+        }
+
+        .whiteboxes div {
+            width: 100%;
         }
     }
 </style>
