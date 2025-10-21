@@ -13,6 +13,7 @@
         font-family: "Oxygen", sans-serif;
         padding: 20px;
         background-color: beige;
+        margin: 0px;
     }
 
     .container {
@@ -52,6 +53,7 @@
         display: flex;
         width: 30px;
         height: 30px;
+        padding-top: 10px;
     }
 
     .imgleft {
@@ -108,7 +110,8 @@
         padding-top: 70px;
         padding: 30px;
         margin-top: 10px;
-        height: 80vh;
+        position: relative;
+        height: 100vh;
     }
 
 
@@ -120,8 +123,8 @@
         row-gap: 10px;
         column-gap: 10px;
         position: absolute;
-        bottom: 100px;
-        right: 100px;
+        right: 30px;
+        bottom: 30px;
     }
 
     .whiteboxes div {
@@ -129,8 +132,6 @@
         border-radius: 15px;
         padding: 30px;
         padding-bottom: 5px;
-        width: 200px;
-        height: 120px;
     }
 
     .whiteboxes h1 {
@@ -162,6 +163,28 @@
             padding: 10px;
         }
 
+        .hero {
+            height: 80vh;
+        }
+
+        .btn1 {
+            border-radius: 8px;
+            width: 170px;
+            height: 50px;
+            font-size: 15px;
+        }
+
+        .btn2 {
+            color: white;
+            background-color: transparent;
+            border-color: white;
+            border-radius: 8px;
+            border-width: 3px;
+            width: 170px;
+            height: 50px;
+            font-size: 15px;
+        }
+
         .herotitle h1 {
             font-size: 70px;
             font-weight: 800;
@@ -169,22 +192,27 @@
             margin-bottom: 20px;
         }
 
-
-
-        .whiteboxes {
-            position: absolute;
-            bottom: 60px;
-            right: 80px;
+        .whiteboxes h1 {
+            font-size: 48px;
         }
+
+        .whiteboxes h3 {
+            font-size: 18px;
+        }
+
 
     }
 
-    @media only screen and (max-width: 800px) {
+    @media only screen and (max-width: 700px) {
 
         body {
             padding: 0px;
-            padding-top: 8px;
         }
+
+        .container {
+            margin: 8px;
+        }
+
 
         .navright p {
             display: none;
@@ -207,6 +235,10 @@
         .hero {
             background-image: url(/image/building1.jpg);
             background-size: cover;
+            padding: 20px;
+            border-radius: 0px;
+            height: 100%;
+            margin: 0px;
         }
 
         .btn1 {
@@ -230,9 +262,23 @@
         }
 
         .whiteboxes {
+            width: 100%;
             display: flex;
             flex-direction: column;
+            row-gap: 10px;
+            column-gap: 10px;
+            padding-top: 10px;
+            position: static;
         }
+
+        .whiteboxes h1 {
+            font-size: 35px;
+        }
+
+        .whiteboxes h3 {
+            font-size: 18px;
+        }
+
     }
 </style>
 
