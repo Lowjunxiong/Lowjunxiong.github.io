@@ -3,10 +3,114 @@
 
 <head>
     <title>W2 Exe2</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 </head>
+<style>
+    body {
+        background-color: #510919;
+    }
+
+    .container {
+        display: inline-block;
+        display: flex;
+        gap: 45px;
+        justify-content: center;
+        color: #fcd9d9;
+    }
+
+
+
+    .container h2 {
+        color: #d17070;
+        font-family: "Lora", serif;
+        font-weight: lighter;
+        border-bottom: 1px solid;
+        padding-bottom: 10px;
+        text-transform: uppercase;
+    }
+
+
+    .person2 {
+        position: relative;
+        top: 70px;
+    }
+
+    .person3 {
+        position: relative;
+        top: 140px;
+    }
+
+    .person4 {
+        position: relative;
+        top: 210px;
+    }
+
+    p {
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+
+    @media only screen and (max-width: 1200px) {
+        .container {
+            flex-wrap: wrap;
+        }
+
+        .person1,
+        .person2,
+        .person3,
+        .person4 {
+            position: static;
+        }
+
+
+    }
+
+    @media only screen and (max-width: 800px) {
+        .container {
+            gap: 0px;
+        }
+
+        .person1,
+        .person2,
+        .person3,
+        .person4 {
+            width: 90%;
+        }
+
+        .person1 img,
+        .person2 img,
+        .person3 img,
+        .person4 img {
+            width: 100%;
+        }
+
+
+    }
+</style>
 
 <body>
-
+    <div class="container">
+        <div class="person1">
+            <h2>Joseph Barnes</h2>
+            <img src="/image/about_img1.jpg" alt="">
+            <p>Manager</p>
+        </div>
+        <div class="person2">
+            <h2>Earl Wood</h2>
+            <img src="/image/about_img2.jpg" alt="">
+            <p>Bartender</p>
+        </div>
+        <div class="person3">
+            <h2>Bobby Johnson</h2>
+            <img src="/image/about_img3.jpg" alt="">
+            <p>Bartender</p>
+        </div>
+        <div class="person4">
+            <h2>Jane Morgan</h2>
+            <img src="/image/about_img4.jpg" alt="">
+            <p>Bartender</p>
+        </div>
+    </div>
 </body>
 
 </html>
